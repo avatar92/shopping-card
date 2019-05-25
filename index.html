@@ -10,7 +10,7 @@
     <main>
         <div class="maincontainer">
             <div class="sumcontainer">
-                <span>Shopping Bag Totale:</span>
+                <div class="title">Shopping Bag Totale:</div>
                 <div class="totalsum">
                     <span>$</span>
                     <span id="totalSum1">0</span>  
@@ -31,9 +31,10 @@
                     <input type="button" value="-" class="rounded-border-moins" onclick="mine1()">                    
                 </div>
                 <span class="unitPrice">$50</span>
-                
-                <span class="incrimentedXUnitPrice" id="prod1" onchange="total()" >$0</span>
-                
+                <div class="containerprod">
+                    <span>$</span>
+                    <span class="incrimentedXUnitPrice" id="prod1" onchange="total()" >0</span>
+                </div>
             </div>
             <div class="raket-container">
                     <div class="firstcol">    
@@ -49,8 +50,11 @@
                         <input type="submit" value="-" class="rounded-border-moins" onclick="mine2()">                    
                     </div>
                     <span class="unitPrice">$60</span>
+                    <div class="containerprod">
+                        <span>$</span>
+                        <span class="incrimentedXUnitPrice" id="prod2" onchange="total()" >0</span>
+                    </div>
                     
-                    <span class="incrimentedXUnitPrice" id="prod2" onchange="total()">$0</span>
                     
             </div>
             <div class="pantalon-container">
@@ -67,7 +71,11 @@
                         <input type="submit" value="-" class="rounded-border-moins" onclick="mine3()">                    
                     </div>
                     <span class="unitPrice">$70</span>
-                    <span class="incrimentedXUnitPrice" id="prod3" onchange="total()">$0</span>
+                    <div class="containerprod">
+                        <span>$</span>
+                        <span class="incrimentedXUnitPrice" id="prod3" onchange="total()" >0</span>
+                    </div>
+                    
                     
             </div>
         </div>

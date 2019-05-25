@@ -1,26 +1,81 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #7EC855;
+    font-family: 'Roboto', sans-serif;
+  }
+span
+{
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400; 
+}
+
+.maincontainer
+{
+    
+  width: 750px;
+  height: 423px;
+  margin: 80px auto;
+  background: #FFFFFF;
+  
+  border-radius: 6px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between;
+  
+      
+}
+.title
+{
+  
+  
+  padding: 20px 30px;
+  
+}
 .sumcontainer
 {
-    border-bottom: 1px solid yellow;
-    display: flex; 
+    
+    display: flex;
+    align-items: center;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400; 
 }
-.sbedri-container , .pantalon-container , .raket-container
+.sbedri-container , .pantalon-container , .raket-container 
 {
-    border: 1px solid red; 
+     
     display: flex;
     justify-content: space-around;
     align-items: center; 
      
 }
-.maincontainer
+.xbutton , .heart , .rounded-border-plus , .rounded-border-moins 
 {
-    
-    border: 2px solid rgb(192,192,192);
-    border-radius: 5px;
-    width: 60%;
-    position: fixed;
-    top: 25%;
-    left: 50%; 
-    transform: translate(-50%,50%)
-      
+    height: 30px;
+    width: 30px;
+    color: #5E6977;
+    background-color: white ; 
 }
-
+.incremented
+{    
+    align-items: center;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+     
+}
+.firstcol , .secondcol
+{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+    width: 11%; 
+}
+.containerprod
+{
+    align-items: center; 
+    justify-content: space-around; 
+    
+}
