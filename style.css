@@ -1,0 +1,26 @@
+.sumcontainer
+{
+    border-bottom: 1px solid yellow;
+    display: flex; 
+}
+.sbedri-container , .pantalon-container , .raket-container
+{
+    border: 1px solid red; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+     
+}
+.maincontainer
+{
+    
+    border: 2px solid rgb(192,192,192);
+    border-radius: 5px;
+    width: 60%;
+    position: fixed;
+    top: 25%;
+    left: 50%; 
+    transform: translate(-50%,50%)
+      
+}
+

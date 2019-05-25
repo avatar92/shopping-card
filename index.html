@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Chopping card</title>    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <div class="maincontainer">
+            <div class="sumcontainer">
+                <span>Shopping Bag Totale:</span>
+                <div class="totalsum">
+                    <span>$</span>
+                    <span id="totalSum1">0</span>  
+                </div>
+            </div>
+            <div class="sbedri-container">
+                <div class="firstcol">    
+                    <input type="submit" value="X" class="rounded-circus-border xbutton">
+                    <button class="fas fa-heart heart" type="button">
+                        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+                    </button>
+                </div>    
+                <img src="https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/jpptcu7veqluz4zhlqjx/chaussure-m2k-tekno-pour-3wHw5X.jpg" alt="nike" class="articleImg" width="100px" height="100px">
+                <div class="secondcol">
+                    <input type="button" value="+" class="rounded-border-plus" onclick="add1()" >
+                    
+                    <span class="incremented" id="val1"> 0 </span>
+                    <input type="button" value="-" class="rounded-border-moins" onclick="mine1()">                    
+                </div>
+                <span class="unitPrice">$50</span>
+                
+                <span class="incrimentedXUnitPrice" id="prod1" onchange="total()" >$0</span>
+                
+            </div>
+            <div class="raket-container">
+                    <div class="firstcol">    
+                        <input type="submit" value="X" class="rounded-circus-border xbutton">
+                        <button class="fas fa-heart heart" type="button">
+                            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+                        </button>
+                    </div>    
+                    <img src="https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/jpptcu7veqluz4zhlqjx/chaussure-m2k-tekno-pour-3wHw5X.jpg" alt="nike" class="articleImg" width="100px" height="100px">
+                    <div class="secondcol">
+                        <input type="submit" value="+" class="rounded-border-plus" onclick="add2()">
+                        <span class="incremented" id="val2"> 0 </span>
+                        <input type="submit" value="-" class="rounded-border-moins" onclick="mine2()">                    
+                    </div>
+                    <span class="unitPrice">$60</span>
+                    
+                    <span class="incrimentedXUnitPrice" id="prod2" onchange="total()">$0</span>
+                    
+            </div>
+            <div class="pantalon-container">
+                    <div class="firstcol">    
+                        <input type="submit" value="X" class="rounded-circus-border xbutton">
+                        <button class="fas fa-heart heart" type="button">
+                            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+                        </button>
+                    </div>    
+                    <img src="https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/jpptcu7veqluz4zhlqjx/chaussure-m2k-tekno-pour-3wHw5X.jpg" alt="nike" class="articleImg" width="100px" height="100px">
+                    <div class="secondcol">
+                        <input type="submit" value="+" class="rounded-border-plus" onclick="add3()">
+                        <span class="incremented" id="val3"> 0 </span>
+                        <input type="submit" value="-" class="rounded-border-moins" onclick="mine3()">                    
+                    </div>
+                    <span class="unitPrice">$70</span>
+                    <span class="incrimentedXUnitPrice" id="prod3" onchange="total()">$0</span>
+                    
+            </div>
+        </div>
+    </main>
+    <script src="./sum.js"></script>
+</body>
+</html>
